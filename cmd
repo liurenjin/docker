@@ -14,8 +14,7 @@ systemctl start docker
 systemctl enable docker
 docker images
 docker pull opengrok/docker
-docker run -d -e REINDEX=3 -v <path/to/your/src>:/src -p 8080:8080 opengrok/docker:latest
-docker run -d -e REINDEX=3 -v  /src -p 8080:8080 opengrok/docker:latest
+
 cd /src
 docker images
 docker container
